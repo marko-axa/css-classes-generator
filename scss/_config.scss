@@ -7,6 +7,12 @@ $size-scale: (
   '5': 'var(--size-5)'
 );
 
+$size-scale-fonts: (
+  '0': 'var(--font-size-fluid-0)',
+  '1': 'var(--font-size-fluid-1)',
+  '2': 'var(--font-size-fluid-2)',
+  '3': 'var(--font-size-fluid-3)'
+);
 /// COLORS
 /// Colors are shared between backgrounds and text by default.
 /// You can also use them to power borders, fills or shadows, for example.
@@ -24,12 +30,6 @@ $gorko-config: (
       'black': 900
     )
   ),
-  'bg': (
-    'items': 'color',
-    'css-vars': true,
-    'output': 'standard',
-    'property': 'background'
-  ),
   'color': (
     'items': 'color',
     'css-vars': true,
@@ -39,7 +39,6 @@ $gorko-config: (
   'box': (
     'items': (
       'block': 'block',
-      'flex': 'flex',
       'hide': 'none',
       'show': 'inherit'
     ),
@@ -48,7 +47,8 @@ $gorko-config: (
   ),
   'font': (
     'items': (
-      'base': '"Inter", Helvetica, Arial, sans-serif'
+      'primary': 'var(--font-primary)',
+      'secondary': 'var(--font-secondary)'
     ),
     'output': 'standard',
     'property': 'font-family'
@@ -85,31 +85,49 @@ $gorko-config: (
     'output': 'standard',
     'property': 'padding-right'
   ),
-  'pad-bottom': (
-    'items': $size-scale,
+
+  // TYPOGRAPHY
+  'font':
+    (
+      'items': (
+        'primary': 'var(--font-primary)',
+        'secondary': 'var(--font-secondary)'
+      ),
+      'output': 'standard',
+      'property': 'font-family'
+    ),
+  'text': (
+    'items': $size-scale-fonts,
+    // because scale is responsive
     'output': 'standard',
-    'property': 'padding-bottom'
+    'property': 'font-size'
   ),
-  'pad-left': (
-    'items': $size-scale,
+  'leading': (
+    // TODO: this is probably off
+    'items':
+      (
+        'flat': '1.2',
+        'short': '1.35',
+        'regular': '1.7'
+      ),
     'output': 'standard',
-    'property': 'padding-left'
+    'property': 'line-height'
   ),
-  'layer': (
+  'ta': (
     'items': (
-      '0': 0,
-      '1': 10,
-      '2': 20,
-      '3': 30,
-      '4': 40
+      'center': 'center',
+      'left': 'left',
+      'right': 'right'
     ),
     'output': 'standard',
-    'property': 'z-index'
+    'property': 'text-align'
   ),
-  'text': (
-    'items': $size-scale,
-    'output': 'responsive',
-    'property': 'font-size'
+  'tt': (
+    'items': (
+      'upper': 'uppercase'
+    ),
+    'output': 'standard',
+    'property': 'text-transform'
   ),
   'width': (
     'items': (
