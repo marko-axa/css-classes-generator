@@ -125,8 +125,10 @@ $gorko-config: (
     'property': 'width'
   ),
   'breakpoints': (
-    'sm': '(min-width: 36em)',
-    'md': '(min-width: 48em)',
-    'lg': '(min-width: 62em)'
+    // 'xs': '(min-width: 36em)',
+    'sm': '(min-width: 48em)',
+    'md': '(min-width: 62em)',
+    'lg': '(min-width: 75em)',
+    'xl': '(min-width: 90em)'
   )
 );
