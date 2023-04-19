@@ -1,0 +1,132 @@
+$base-size: 1rem;
+
+/// SIZE SCALE
+$size-scale: (
+  '1': $base-size * 0.8,
+  '2': $base-size,
+  '3': $base-size * 1.25,
+  '4': $base-size * 1.6,
+  '5': $base-size * 2,
+  '6': $base-size * 3
+);
+
+/// COLORS
+/// Colors are shared between backgrounds and text by default.
+/// You can also use them to power borders, fills or shadows, for example.
+///
+$colors: (
+  'dark': #1a1a1a,
+  'light': #f3f3f3
+);
+
+$gorko-config: (
+  'css-vars': (
+    'color': $colors,
+    'weight': (
+      'bold': 700,
+      'black': 900
+    )
+  ),
+  'bg': (
+    'items': 'color',
+    'css-vars': true,
+    'output': 'standard',
+    'property': 'background'
+  ),
+  'color': (
+    'items': 'color',
+    'css-vars': true,
+    'output': 'standard',
+    'property': 'color'
+  ),
+  'box': (
+    'items': (
+      'block': 'block',
+      'flex': 'flex',
+      'hide': 'none',
+      'show': 'inherit'
+    ),
+    'output': 'responsive',
+    'property': 'display'
+  ),
+  'font': (
+    'items': (
+      'base': '"Inter", Helvetica, Arial, sans-serif'
+    ),
+    'output': 'standard',
+    'property': 'font-family'
+  ),
+
+  'gap-top': (
+    'items': $size-scale,
+    'output': 'standard',
+    'property': 'margin-top'
+  ),
+  'gap-right': (
+    'items': $size-scale,
+    'output': 'standard',
+    'property': 'margin-right'
+  ),
+  'gap-bottom': (
+    'items': $size-scale,
+    'output': 'standard',
+    'property': 'margin-bottom'
+  ),
+  'gap-left': (
+    'items': $size-scale,
+    'output': 'standard',
+    'property': 'margin-left'
+  ),
+
+  'pad-top': (
+    'items': $size-scale,
+    'output': 'standard',
+    'property': 'padding-top'
+  ),
+  'pad-right': (
+    'items': $size-scale,
+    'output': 'standard',
+    'property': 'padding-right'
+  ),
+  'pad-bottom': (
+    'items': $size-scale,
+    'output': 'standard',
+    'property': 'padding-bottom'
+  ),
+  'pad-left': (
+    'items': $size-scale,
+    'output': 'standard',
+    'property': 'padding-left'
+  ),
+  'layer': (
+    'items': (
+      '0': 0,
+      '1': 10,
+      '2': 20,
+      '3': 30,
+      '4': 40
+    ),
+    'output': 'standard',
+    'property': 'z-index'
+  ),
+  'text': (
+    'items': $size-scale,
+    'output': 'responsive',
+    'property': 'font-size'
+  ),
+  'width': (
+    'items': (
+      'full': '100%',
+      'half': '50%',
+      'quarter': '25%',
+      'third': '33.3333333333%'
+    ),
+    'output': 'responsive',
+    'property': 'width'
+  ),
+  'breakpoints': (
+    'sm': '(min-width: 36em)',
+    'md': '(min-width: 48em)',
+    'lg': '(min-width: 62em)'
+  )
+);

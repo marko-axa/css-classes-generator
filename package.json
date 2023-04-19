@@ -1,0 +1,21 @@
+{
+  "name": "utils-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'sass scss/global.scss css/global.css --quiet --watch' 'npx serve'",
+    "build": "sass scss/global.scss css/global.css --quiet",
+    "format": "prettier -w ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "sass": "^1.58.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7"
+  }
+}
