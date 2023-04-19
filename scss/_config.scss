@@ -1,10 +1,10 @@
 /// SIZE SCALE
 $size-scale: (
-  '1': 'var(--size-1)',
-  '2': 'var(--size-2)',
-  '3': 'var(--size-3)',
-  '4': 'var(--size-4)',
-  '5': 'var(--size-5)'
+  '1': 'var(--size-fluid-1)',
+  '2': 'var(--size-fluid-2)',
+  '3': 'var(--size-fluid-3)',
+  '4': 'var(--size-fluid-4)',
+  '5': 'var(--size-fluid-5)'
 );
 
 $size-scale-fonts: (
@@ -112,6 +112,16 @@ $gorko-config: (
       ),
     'output': 'standard',
     'property': 'line-height'
+  ),
+  'measure': (
+    'items': (
+      'micro': '10ch',
+      'compact': '30ch',
+      'short': '40ch',
+      'long': '70ch'
+    ),
+    'output': 'standard',
+    'property': 'max-width'
   ),
   'ta': (
     'items': (
