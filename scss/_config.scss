@@ -39,51 +39,71 @@ $gorko-config: (
   'box': (
     'items': (
       'block': 'block',
-      'hide': 'none',
+      'hidden': 'none',
       'show': 'inherit'
     ),
     'output': 'responsive',
     'property': 'display'
   ),
-  'font': (
+  'hidden': (
     'items': (
-      'primary': 'var(--font-primary)',
-      'secondary': 'var(--font-secondary)'
+      'yes': 'none',
+      'no': 'revert'
     ),
-    'output': 'standard',
-    'property': 'font-family'
+    'output': 'responsive',
+    'property': 'display'
   ),
-
+  /// Outside Space
+  // TODO: is this needed if stack is react component?
+  'gutter':
+    (
+      'items': $size-scale,
+      'output': 'standard',
+      'property': '--gutter'
+    ),
+  'stack-gap': (
+    'items': $size-scale,
+    'output': 'standard',
+    'property': '--stack-gap'
+  ),
   'gap-top': (
     'items': $size-scale,
     'output': 'standard',
     'property': 'margin-top'
-  ),
-  'gap-right': (
-    'items': $size-scale,
-    'output': 'standard',
-    'property': 'margin-right'
   ),
   'gap-bottom': (
     'items': $size-scale,
     'output': 'standard',
     'property': 'margin-bottom'
   ),
-  'gap-left': (
-    'items': $size-scale,
+  'gap-inline': (
+    'items':
+      map-merge(
+        $size-scale,
+        (
+          'auto': 'auto'
+        )
+      ),
     'output': 'standard',
-    'property': 'margin-left'
+    'property': 'margin-inline'
   ),
-
-  'pad-top': (
+  // gap-block? probably you need stack
+  // INSIDE SPACING
+  'pad':
+    (
+      'items': $size-scale,
+      'output': 'standard',
+      'property': 'padding'
+    ),
+  'pad-block': (
     'items': $size-scale,
     'output': 'standard',
-    'property': 'padding-top'
+    'property': 'padding-block'
   ),
-  'pad-right': (
+  'pad-inline': (
     'items': $size-scale,
     'output': 'standard',
-    'property': 'padding-right'
+    'property': 'padding-inline'
   ),
 
   // TYPOGRAPHY
