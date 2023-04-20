@@ -14,7 +14,8 @@
   $var-namespace: get-namespace('css-vars');
 
   @each $key, $value in $items {
-    #{'.' + $selector + '-' + $key} {
+    #{"[class~='" + $selector + '-' + $key + "']"} {
+      // #{'.' + $selector + '-' + $key} {
       @if ($use-css-vars) {
         #{ $property }: var(--#{$var-namespace + $item-key + '-' + $key});
       } @else {
