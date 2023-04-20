@@ -1,4 +1,4 @@
-## Utility Generator
+## Utility CSS Class Generator
 
 > this is project is based on gorko utility generator
 
