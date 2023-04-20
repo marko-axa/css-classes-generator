@@ -4,29 +4,13 @@
 
 @import 'reset';
 
-body {
-  padding: 2rem;
-  display: grid;
-  place-items: center;
+// leaving this as example
+// body {
+//   display: grid;
+//   place-items: center;
 
-  @include apply-utility('font', 'base');
-}
-
-h1 {
-  font-weight: var(--weight-black);
-  line-height: 1.1;
-}
-
-code {
-  font-size: 1.4em;
-  font-weight: var(--weight-bold);
-}
-
-article {
-  padding: get-size('700');
-  max-width: 30rem;
-}
-
-article > * + * {
-  margin-top: get-size('500');
-}
+//   @include apply-utility('font', 'base');
+//   font-weight: var(--weight-black);
+//   padding: get-size('700');
+//   margin-top: get-size('500');
+// }
