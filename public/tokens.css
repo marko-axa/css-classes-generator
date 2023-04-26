@@ -1,3 +1,4 @@
+/* Copy/pasted from vorsorge-portal */
 /* Remove default padding */
 [class~='podeliahvorsorgeportal'] ul[class],
 .eliah-pod__podeliahvorsorgeportal ol[class] {
@@ -38,7 +39,7 @@
   --animation-duration-small: 0.1s;
 }
 
-:where([class~='podeliahvorsorgeportal']) {
+[class~='podeliahvorsorgeportal'] {
   /*  Border */
   --border-size-1: 1px;
   --border-size-2: 2px;
@@ -169,10 +170,11 @@
 
 :where([class~='podeliahvorsorgeportal']) {
   /*  axa-tokens lib  */
-  --shadow-base-1: 0px 1px 8px 0px rgba(0, 0, 0, 0.15);
-  --shadow-box-default: var(--shadow-base-1);
-  --shadow-base-2: 0px 1px 20px 0px rgba(0, 0, 0, 0.15);
-  --shadow-box-high: var(--shadow-base-2);
+  --shadow-1: 0px 1px 8px 0px rgba(0, 0, 0, 0.15);
+  --shadow-default: var(--shadow-1);
+  --shadow-2: 0px 1px 20px 0px rgba(0, 0, 0, 0.15);
+  --shadow-high: var(--shadow-2);
+
   /* TODO: missing inner shadow:  */
   --inner-shadow-0: ;
   --inner-shadow-2: ;
@@ -189,6 +191,7 @@
   --size-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem); /* 35.24 - 50.56*/
   --size-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem); /* 42.72px - 67.36*/
   --size-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem); /* 53.44px - 89.76*/
+
   --size-000: -0.5rem;
   --size-00: -0.25rem;
   --size-1: 0.25rem; /* 4px */
@@ -300,10 +303,15 @@
   --font-size-8: 2.25rem; /* 36px */
   --font-size-9: 3rem; /* 48px */
   --font-size-10: 3.875rem; /* 62px */
-  --font-size-fluid-0: clamp(0.75rem, 2vw, 1rem);
-  --font-size-fluid-1: clamp(1rem, 4vw, 1.5rem);
-  --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
-  --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
+
+  --font-size-fluid-0: clamp(0.75rem, 0.71rem + 0.18vw, 0.875rem);
+  --font-size-fluid-1: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+  --font-size-fluid-2: clamp(1.125rem, 1.09rem + 0.18vw, 1.25rem);
+  --font-size-fluid-3: clamp(1.25rem, 1.11rem + 0.71vw, 1.75rem);
+  --font-size-fluid-4: clamp(1.5rem, 1.29rem + 1.07vw, 2.25rem);
+  --font-size-fluid-5: clamp(1.75rem, 1.39rem + 1.79vw, 3rem);
+  --font-size-fluid-6: clamp(2.25rem, 1.82rem + 2.14vw, 3.75rem);
+  --font-size-fluid-7: clamp(2.75rem, 2.25rem + 2.5vw, 4.5rem);
 }
 
 :where([class~='podeliahvorsorgeportal']) {
