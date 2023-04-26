@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Demo</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Demo</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="../css/css-classes.generated.css" />
+    <!-- tokens are copy/pasted from portal :) -->
+    <link rel="stylesheet" href="tokens.css" />
+    <style>
+      .podeliahvorsorgeportal {
+        --color-stroke: var(--color-greyscale-6);
+      }
 
-  <link rel="stylesheet" href="global.css" />
-  <link rel="stylesheet" href="../css/css-classes.generated.css" />
-  <!-- tokens are copy/pasted from portal :) -->
-  <link rel="stylesheet" href="tokens.css" />
-  <style>
-    .podeliahvorsorgeportal {
-      --color-stroke: var(--color-greyscale-6);
-    }
+      .card {
+        border: 1px solid var(--color-stroke);
+        box-shadow: var(--shadow-default);
+        padding: var(--size-fluid-1);
+        margin: var(--size-10);
+      }
 
-    .card {
-      border: 1px solid var(--color-stroke);
-      box-shadow: var(--shadow-default);
-      padding: var(--size-fluid-1);
-      margin: var(--size-10);
-    }
+      .box {
+        --_padding: 1rem;
+      }
 
-    .box {
-      --_padding: 1rem;
-    }
+      [class~='stack'] > * + * {
+        margin-block-start: var(--stack-gap, 1rem);
+      }
+    </style>
+  </head>
+  <!-- simulates where our pod is rendered -->
 
-    [class~=stack]>*+* {
-      margin-block-start: var(--stack-gap, 1rem);
-    }
-  </style>
-</head>
-<!-- simulates where our pod is rendered -->
-
-<body class="podeliahvorsorgeportal">
-  <article class="card width-full md:width-half gap-inline-auto sm:width-full this-is-test">
-    <div class="stack">
-      <h1 class="text-1 leading-flat">Properties Demo</h1>
-      <p>
-        This little demo is using CSS Custom Properties for <code>bg-</code> and
-        <code>weight-</code>. Everything else is standard key value pairs.
-      </p>
-      <p>
-        This element uses the <code>.bg-dark</code> utility to set background colour. All
-        we have to do to change what colour that is, is change the
-        <code>--color-dark</code> Custom Property value. Use the button to change that to
-        pink and the <code>--color-light</code> to teal.
-      </p>
-      <button>Switch color</button>
-  </article>
-  </div>
-  <script src="js/main.js" type="module"></script>
-</body>
-
+  <body class="podeliahvorsorgeportal">
+    <article
+      class="card width-full md:width-half gap-inline-auto sm:width-full this-is-test"
+    >
+      <div class="stack">
+        <h1 class="text-1 leading-flat">Properties Demo</h1>
+        <p>
+          This little demo is using CSS Custom Properties for <code>bg-</code> and
+          <code>weight-</code>. Everything else is standard key value pairs.
+        </p>
+        <p>
+          This element uses the <code>.bg-dark</code> utility to set background colour.
+          All we have to do to change what colour that is, is change the
+          <code>--color-dark</code> Custom Property value. Use the button to change that
+          to pink and the <code>--color-light</code> to teal.
+        </p>
+        <button>Switch color</button>
+      </div>
+    </article>
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>

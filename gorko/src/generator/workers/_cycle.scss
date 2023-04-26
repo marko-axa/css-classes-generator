@@ -9,7 +9,7 @@
 
 @mixin cycle($prefix, $is-breakpoint) {
   @each $selector, $props in $gorko-config {
-    @if(type-of($props) == 'map') {
+    @if (type-of($props) == 'map') {
       @include process-collection($props, $prefix, $selector, $is-breakpoint);
     }
   }
