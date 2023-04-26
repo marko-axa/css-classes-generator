@@ -213,6 +213,10 @@
   font-family: var(--font-secondary);
 }
 
+[class~=text-base] {
+  font-size: 1rem;
+}
+
 [class~=text-0] {
   font-size: var(--font-size-fluid-0);
 }
@@ -408,4 +412,4 @@
 /* GORKO: auto-generated utility classes end */
 /* RULES FROM PARENT or UA you want to reset*/
 
-/*# sourceMappingURL=global.css.map */
+/*# sourceMappingURL=utils.css.map */

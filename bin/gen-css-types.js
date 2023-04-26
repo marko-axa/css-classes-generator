@@ -1,13 +1,13 @@
 /* 
 Assumptions:
-  - existence of: "../css/global.css"
+  - existence of: "../css/utils.css"
   - file needs to be formate so that every className needs to be on new line
   - you run this file node ./generate-css-types.js
 */
 const fs = require('fs');
 const path = require('path');
 
-const cssContentLocationPath = path.join(__dirname, '../', 'css', 'global.css');
+const cssContentLocationPath = path.join(__dirname, '../', 'css', 'utils.css');
 const cssContent = fs.readFileSync(cssContentLocationPath, 'utf-8');
 const OUTPUT_FILE_PATH = path.join(__dirname, '../', 'css', 'css-classes.generated.css');
 
