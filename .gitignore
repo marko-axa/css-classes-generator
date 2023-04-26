@@ -8,3 +8,4 @@ npm-debug.*
 node_modules
 test.html
 tmp
+design
