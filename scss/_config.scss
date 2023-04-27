@@ -1,31 +1,34 @@
 /// SIZE SCALE
 $size-scale: (
-  '1': 'var(--size-fluid-1)',
-  '2': 'var(--size-fluid-2)',
-  '3': 'var(--size-fluid-3)',
-  '4': 'var(--size-fluid-4)',
-  '5': 'var(--size-fluid-5)'
+  '1': var(--size-fluid-1),
+  '2': var(--size-fluid-2),
+  '3': var(--size-fluid-3),
+  '4': var(--size-fluid-4),
+  '5': var(--size-fluid-5)
 );
 
 $size-scale-fonts: (
   'base': '1rem',
-  '0': 'var(--font-size-fluid-0)',
-  '1': 'var(--font-size-fluid-1)',
-  '2': 'var(--font-size-fluid-2)',
-  '3': 'var(--font-size-fluid-3)'
+  '0': var(--font-size-fluid-0),
+  '1': var(--font-size-fluid-1),
+  '2': var(--font-size-fluid-2),
+  '3': var(--font-size-fluid-3)
 );
 /// COLORS
 /// Colors are shared between backgrounds and text by default.
 /// You can also use them to power borders, fills or shadows, for example.
 ///
 $colors: (
-  'dark': #1a1a1a,
-  'light': #f3f3f3
+  'tomato': tomato,
+  'goldenrod': goldenrod,
+  'primary': var(--color-tomato),
+  'secondary': var(--color-goldenrod)
 );
 
 $gorko-config: (
   'css-vars': (
     'color': $colors,
+    'marko': $colors,
     'weight': (
       'bold': 700,
       'black': 900
