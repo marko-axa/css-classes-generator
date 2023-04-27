@@ -1,24 +1,36 @@
 :root {
-  --color-dark: #1a1a1a;
-  --color-light: #f3f3f3;
+  --color-tomato: tomato;
+  --color-goldenrod: goldenrod;
+  --color-primary: var(--color-tomato);
+  --color-secondary: var(--color-goldenrod);
   --weight-bold: 700;
   --weight-black: 900;
 }
 
 :root {
-  --color-dark: #1a1a1a;
-  --color-light: #f3f3f3;
+  --color-tomato: tomato;
+  --color-goldenrod: goldenrod;
+  --color-primary: var(--color-tomato);
+  --color-secondary: var(--color-goldenrod);
   --weight-bold: 700;
   --weight-black: 900;
 }
 
 /* GORKO: auto-generated utility classes start */
-[class~=color-dark] {
-  color: var(--color-dark);
+[class~=color-tomato] {
+  color: var(--color-tomato);
 }
 
-[class~=color-light] {
-  color: var(--color-light);
+[class~=color-goldenrod] {
+  color: var(--color-goldenrod);
+}
+
+[class~=color-primary] {
+  color: var(--color-primary);
+}
+
+[class~=color-secondary] {
+  color: var(--color-secondary);
 }
 
 [class~=box-block] {

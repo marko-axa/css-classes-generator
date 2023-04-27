@@ -5,13 +5,14 @@ const state = {
 };
 
 button.addEventListener('click', () => {
+  const pod = document.querySelector('.podeliahvorsorgeportal');
   if (state.status === 'switched') {
-    document.documentElement.style.removeProperty('--color-dark');
-    document.documentElement.style.removeProperty('--color-light');
+    pod.style.removeProperty('--color-primary');
+    pod.style.removeProperty('--color-secondary');
     state.status = 'default';
   } else {
-    document.documentElement.style.setProperty('--color-dark', 'pink');
-    document.documentElement.style.setProperty('--color-light', 'teal');
+    pod.style.setProperty('--color-primary', 'var(--color-goldenrod)');
+    pod.style.setProperty('--color-secondary', 'var(--color-tomato)');
     state.status = 'switched';
   }
 });

@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="utils.css" />
   <link rel="stylesheet" href="tokens.css" />
   <style>
+    *,
+    :before,
+    :after {
+      box-sizing: border-box;
+    }
+
     .podeliahvorsorgeportal {
       --color-stroke: var(--color-greyscale-6);
     }
@@ -18,7 +24,6 @@
       border: 1px solid var(--color-stroke);
       box-shadow: var(--shadow-default);
       padding: var(--size-fluid-1);
-      margin: var(--size-10);
     }
 
     .box {
@@ -32,10 +37,11 @@
 </head>
 <!-- simulates where our pod is rendered -->
 
-<body class="podeliahvorsorgeportal">
-  <article class="card width-full md:width-half gap-inline-auto sm:width-full">
+<body class="podeliahvorsorgeportal color-primary flow">
+  <h1 class="">Properties Demo</h1>
+  <article class="card [ bg-dark ] [ width-full md:width-half ] gap-inline-auto ">
     <div class="flow">
-      <h1 class="text-1 leading-flat">Properties Demo</h1>
+      <h2>Luke, Trust the force!</h2>
       <p>
         This little demo is using CSS Custom Properties for <code>bg-</code> and
         <code>weight-</code>. Everything else is standard key value pairs.
