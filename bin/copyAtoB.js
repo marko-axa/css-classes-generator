@@ -43,5 +43,5 @@ fs.stat(srcPath)
     // success is silent friend
   })
   .catch(err => {
-    console.log(`Error: ` + err?.message);
+    console.log(`We got an error, here is more context!\n` + err?.message);
   });
