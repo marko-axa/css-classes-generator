@@ -26,6 +26,16 @@ burden of configuration, setup and long term maintenance we decided to something
    - `css/css-classes.generated.css`
    - `public/utils.css`
 
+### Configuration
+
+Majority of work you need to do is in `scss/_config.scss`, if you want to add new utility fn you need to add it there,
+and then run `npm run build`.
+
+### copyToPublic
+
+`npm run copyToPublic`
+this script will copy/paste css/\* to public which is kind of playground for demos
+
 ## Why attribute selectors
 
 vorsorge portal is rendered as micro frontend in myaxa, it's not allowed to use class names in
