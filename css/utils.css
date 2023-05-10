@@ -1,38 +1,4 @@
-:root {
-  --color-tomato: tomato;
-  --color-goldenrod: goldenrod;
-  --color-primary: var(--color-tomato);
-  --color-secondary: var(--color-goldenrod);
-  --weight-bold: 700;
-  --weight-black: 900;
-}
-
-:root {
-  --color-tomato: tomato;
-  --color-goldenrod: goldenrod;
-  --color-primary: var(--color-tomato);
-  --color-secondary: var(--color-goldenrod);
-  --weight-bold: 700;
-  --weight-black: 900;
-}
-
 /* GORKO: auto-generated utility classes start */
-[class~=color-tomato] {
-  color: var(--color-tomato);
-}
-
-[class~=color-goldenrod] {
-  color: var(--color-goldenrod);
-}
-
-[class~=color-primary] {
-  color: var(--color-primary);
-}
-
-[class~=color-secondary] {
-  color: var(--color-secondary);
-}
-
 [class~=box-block] {
   display: block;
 }

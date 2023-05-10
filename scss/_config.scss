@@ -17,37 +17,39 @@ $size-scale-fonts: (
 /// COLORS
 /// Colors are shared between backgrounds and text by default.
 /// You can also use them to power borders, fills or shadows, for example.
-///
-$colors: (
-  'tomato': tomato,
-  'goldenrod': goldenrod,
-  'primary': var(--color-tomato),
-  'secondary': var(--color-goldenrod)
-);
+
+/// Leaving colors and css-vars commented just for example purposes.
+// $colors: (
+//   'tomato': tomato,
+//   'goldenrod': goldenrod,
+//   'primary': var(--color-tomato),
+//   'secondary': var(--color-goldenrod)
+// );
 
 $gorko-config: (
-  'css-vars': (
-    'color': $colors,
-    'weight': (
-      'bold': 700,
-      'black': 900
-    )
-  ),
-  'color': (
-    'items': 'color',
-    'css-vars': true,
-    'output': 'standard',
-    'property': 'color'
-  ),
-  'box': (
-    'items': (
-      'block': 'block',
-      'hidden': 'none',
-      'show': 'inherit'
+  // 'css-vars': (
+  //   'color': $colors,
+  //   'weight': (
+  //     'bold': 700,
+  //     'black': 900
+  //   )
+  // ),
+  // 'color': (
+  //   'items': 'color',
+  //   'css-vars': true,
+  //   'output': 'standard',
+  //   'property': 'color'
+  // ),
+  'box':
+    (
+      'items': (
+        'block': 'block',
+        'hidden': 'none',
+        'show': 'inherit'
+      ),
+      'output': 'responsive',
+      'property': 'display'
     ),
-    'output': 'responsive',
-    'property': 'display'
-  ),
   'hidden': (
     'items': (
       'yes': 'none',
