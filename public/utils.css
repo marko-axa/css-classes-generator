@@ -1,16 +1,4 @@
 /* GORKO: auto-generated utility classes start */
-[class~=box-block] {
-  display: block;
-}
-
-[class~=box-hidden] {
-  display: none;
-}
-
-[class~=box-show] {
-  display: inherit;
-}
-
 [class~=hidden-yes] {
   display: none;
 }
@@ -252,15 +240,6 @@
 }
 
 @media (min-width: 48em) {
-  [class~="sm:box-block"] {
-    display: block;
-  }
-  [class~="sm:box-hidden"] {
-    display: none;
-  }
-  [class~="sm:box-show"] {
-    display: inherit;
-  }
   [class~="sm:hidden-yes"] {
     display: none;
   }
@@ -281,15 +260,6 @@
   }
 }
 @media (min-width: 62em) {
-  [class~="md:box-block"] {
-    display: block;
-  }
-  [class~="md:box-hidden"] {
-    display: none;
-  }
-  [class~="md:box-show"] {
-    display: inherit;
-  }
   [class~="md:hidden-yes"] {
     display: none;
   }
@@ -310,15 +280,6 @@
   }
 }
 @media (min-width: 75em) {
-  [class~="lg:box-block"] {
-    display: block;
-  }
-  [class~="lg:box-hidden"] {
-    display: none;
-  }
-  [class~="lg:box-show"] {
-    display: inherit;
-  }
   [class~="lg:hidden-yes"] {
     display: none;
   }
@@ -339,15 +300,6 @@
   }
 }
 @media (min-width: 90em) {
-  [class~="xl:box-block"] {
-    display: block;
-  }
-  [class~="xl:box-hidden"] {
-    display: none;
-  }
-  [class~="xl:box-show"] {
-    display: inherit;
-  }
   [class~="xl:hidden-yes"] {
     display: none;
   }

@@ -7,22 +7,43 @@ Most of them are just tokens abstractions but they fell in category of 'utility 
 
 Proper utility classes just as in programing do one thing and do it well. `.visually-hidden` for example.
 
+## Media Queries
+
+> Following media queries are used to generate 'responsive' utility classes,
+> when you see 'responsive' in table of property, you can use it as per example
+
+- sm: (min-width: 48em)
+- md: (min-width: 62em)
+- lg: (min-width: 75em)
+- xl: (min-width: 90em)
+
+```jsx
+<div className="lg:hidden-yes">
+  <p>You will not be able to see me on large screens</p>
+</div>
+```
+
 ## Visibility:
 
 > Visibility is about `display: ` property, when you want hide/show parts of the UI depending of viewport size.
 
-responsive: yes
-
 - .hidden-yes {}
 - .hidden-no {}
+
+| Property   | Value | Details         |
+| ---------- | ----- | --------------- |
+| Responsive | Yes   | `lg:hidden-yes` |
 
 ## Gutter:
 
 > We use gutter `--gutter` as default space in all primitives where they apply.
 
-responsive: no
-
 - .gutter-{1-5}
+
+| Property   | Value | Details |
+| ---------- | ----- | ------- |
+| Responsive | No    | N/A     |
+| Fluid      | No    | N/A     |
 
 ## Gap (top):
 
@@ -30,9 +51,12 @@ responsive: no
 > above stack and you feel nested stack is not needed. Gap top is what you use. This type of adjustment is
 > something left for the fine tuning.
 
-responsive: no
-
 - .gap-top-{1-5}
+
+| Property   | Value | Details           |
+| ---------- | ----- | ----------------- |
+| Responsive | No    | N/A               |
+| Fluid      | Yes   | uses fluid spaces |
 
 ### Example:
 
@@ -54,6 +78,11 @@ responsive: no
 
 - .gap-bottom-{1-5}
 
+| Property   | Value | Details           |
+| ---------- | ----- | ----------------- |
+| Responsive | No    | N/A               |
+| Fluid      | Yes   | uses fluid spaces |
+
 ## Gap (inline):
 
 > Gap inline is very handy if you want to setup symmetric left and right padding together.
@@ -61,6 +90,11 @@ responsive: no
 
 - .gap-inline-{1-5}
 - .gap-inline-auto
+
+| Property   | Value | Details           |
+| ---------- | ----- | ----------------- |
+| Responsive | No    | N/A               |
+| Fluid      | Yes   | uses fluid spaces |
 
 ## Padding:
 
@@ -87,6 +121,11 @@ responsive: no
 
 - .text-base
 - .text-{0-3}
+
+| Property   | Value | Details           |
+| ---------- | ----- | ----------------- |
+| Responsive | No    | N/A               |
+| Fluid      | Yes   | uses fluid spaces |
 
 ## Leading:
 
@@ -128,3 +167,8 @@ responsive: no
 - .width-half
 - .width-quarter
 - .width-third
+
+| Property   | Value | Details          |
+| ---------- | ----- | ---------------- |
+| Responsive | Yes   | `sm:width-half`  |
+| Fluid      | Yes   | uses percentages |

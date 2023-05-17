@@ -40,24 +40,15 @@ $gorko-config: (
   //   'output': 'standard',
   //   'property': 'color'
   // ),
-  'box':
+  'hidden':
     (
       'items': (
-        'block': 'block',
-        'hidden': 'none',
-        'show': 'inherit'
+        'yes': 'none',
+        'no': 'revert'
       ),
       'output': 'responsive',
       'property': 'display'
     ),
-  'hidden': (
-    'items': (
-      'yes': 'none',
-      'no': 'revert'
-    ),
-    'output': 'responsive',
-    'property': 'display'
-  ),
   /// Outside Space
   // TODO: is this needed if stack is react component?
   'gutter':
