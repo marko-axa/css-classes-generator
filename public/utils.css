@@ -240,82 +240,82 @@
 }
 
 @media (min-width: 48em) {
-  [class~="sm:hidden-yes"] {
+  [class~=sm_hidden-yes] {
     display: none;
   }
-  [class~="sm:hidden-no"] {
+  [class~=sm_hidden-no] {
     display: revert;
   }
-  [class~="sm:width-full"] {
+  [class~=sm_width-full] {
     width: 100%;
   }
-  [class~="sm:width-half"] {
+  [class~=sm_width-half] {
     width: 50%;
   }
-  [class~="sm:width-quarter"] {
+  [class~=sm_width-quarter] {
     width: 25%;
   }
-  [class~="sm:width-third"] {
+  [class~=sm_width-third] {
     width: 33.3333333333%;
   }
 }
 @media (min-width: 62em) {
-  [class~="md:hidden-yes"] {
+  [class~=md_hidden-yes] {
     display: none;
   }
-  [class~="md:hidden-no"] {
+  [class~=md_hidden-no] {
     display: revert;
   }
-  [class~="md:width-full"] {
+  [class~=md_width-full] {
     width: 100%;
   }
-  [class~="md:width-half"] {
+  [class~=md_width-half] {
     width: 50%;
   }
-  [class~="md:width-quarter"] {
+  [class~=md_width-quarter] {
     width: 25%;
   }
-  [class~="md:width-third"] {
+  [class~=md_width-third] {
     width: 33.3333333333%;
   }
 }
 @media (min-width: 75em) {
-  [class~="lg:hidden-yes"] {
+  [class~=lg_hidden-yes] {
     display: none;
   }
-  [class~="lg:hidden-no"] {
+  [class~=lg_hidden-no] {
     display: revert;
   }
-  [class~="lg:width-full"] {
+  [class~=lg_width-full] {
     width: 100%;
   }
-  [class~="lg:width-half"] {
+  [class~=lg_width-half] {
     width: 50%;
   }
-  [class~="lg:width-quarter"] {
+  [class~=lg_width-quarter] {
     width: 25%;
   }
-  [class~="lg:width-third"] {
+  [class~=lg_width-third] {
     width: 33.3333333333%;
   }
 }
 @media (min-width: 90em) {
-  [class~="xl:hidden-yes"] {
+  [class~=xl_hidden-yes] {
     display: none;
   }
-  [class~="xl:hidden-no"] {
+  [class~=xl_hidden-no] {
     display: revert;
   }
-  [class~="xl:width-full"] {
+  [class~=xl_width-full] {
     width: 100%;
   }
-  [class~="xl:width-half"] {
+  [class~=xl_width-half] {
     width: 50%;
   }
-  [class~="xl:width-quarter"] {
+  [class~=xl_width-quarter] {
     width: 25%;
   }
-  [class~="xl:width-third"] {
+  [class~=xl_width-third] {
     width: 33.3333333333%;
   }
 }

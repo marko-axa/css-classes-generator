@@ -11,7 +11,8 @@
 
   /// For each breakpoint, generate a prefix and run the cycle
   @each $key, $value in map-get($gorko-config, 'breakpoints') {
-    $prefix: #{$key + '\\:'};
+    /// we need to use _ instead of : because of upstream prefixing problem with rollup + postcss
+    $prefix: #{$key + '_'};
     $is-breakpoint: true;
 
     @media #{$value} {

@@ -7,10 +7,12 @@ Most of them are just tokens abstractions but they fell in category of 'utility 
 
 Proper utility classes just as in programing do one thing and do it well. `.visually-hidden` for example.
 
-## Media Queries
+## Media Queries & Responsive classes
 
-> Following media queries are used to generate 'responsive' utility classes,
-> when you see 'responsive' in table of property, you can use it as per example
+> Following media queries are used to generate 'responsive' utility classes.
+> When you see 'responsive' in table of property, you can use it as per example
+> NOTE: typically you would use colon `:` for responsive classes, but in our case
+> combination rollup + postcss didn't allow us to do so, hence chose `_`;
 
 - sm: (min-width: 48em)
 - md: (min-width: 62em)
@@ -18,7 +20,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 - xl: (min-width: 90em)
 
 ```jsx
-<div className="lg:hidden-yes">
+<div className="lg_hidden-yes">
   <p>You will not be able to see me on large screens</p>
 </div>
 ```
@@ -32,7 +34,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 
 | Property   | Value | Details         |
 | ---------- | ----- | --------------- |
-| Responsive | Yes   | `lg:hidden-yes` |
+| Responsive | Yes   | `lg_hidden-yes` |
 
 ## Gutter:
 
@@ -170,5 +172,5 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 
 | Property   | Value | Details          |
 | ---------- | ----- | ---------------- |
-| Responsive | Yes   | `sm:width-half`  |
+| Responsive | Yes   | `sm_width-half`  |
 | Fluid      | Yes   | uses percentages |
