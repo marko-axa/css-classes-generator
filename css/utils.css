@@ -39,26 +39,6 @@
   --gutter: var(--size-fluid-5);
 }
 
-[class~=stack-gap-1] {
-  --stack-gap: var(--size-fluid-1);
-}
-
-[class~=stack-gap-2] {
-  --stack-gap: var(--size-fluid-2);
-}
-
-[class~=stack-gap-3] {
-  --stack-gap: var(--size-fluid-3);
-}
-
-[class~=stack-gap-4] {
-  --stack-gap: var(--size-fluid-4);
-}
-
-[class~=stack-gap-5] {
-  --stack-gap: var(--size-fluid-5);
-}
-
 [class~=gap-top-1] {
   margin-top: var(--size-fluid-1);
 }
