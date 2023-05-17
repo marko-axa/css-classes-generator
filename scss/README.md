@@ -7,6 +7,26 @@ Most of them are just tokens abstractions but they fell in category of 'utility 
 
 Proper utility classes just as in programing do one thing and do it well. `.visually-hidden` for example.
 
+## Table of contents
+
+- [Visibility](#visibility)
+- [Gutter](#gutter)
+- [Gap (top)](#gap-top)
+  - [Example](#example)
+  - [Gap (bottom)](#gap-bottom)
+  - [Gap (inline)](#gap-inline)
+- [Padding](#padding)
+  - [Padding (block):](#padding-block)
+  - [Padding (inline):](#padding-inline)
+- [Typography](#typography)
+  - [Text Sizes](#text-sizes)
+  - [Text Align](#text-align)
+  - [Text Transform](#text-transform)
+  - [Typeface (Font Family)](#typeface-font-family)
+  - [Leading](#leading)
+  - [Measure](#measure)
+- [Width](#width)
+
 ## Media Queries & Responsive classes
 
 > Following media queries are used to generate 'responsive' utility classes.
@@ -25,7 +45,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 </div>
 ```
 
-## Visibility:
+## Visibility
 
 > Visibility is about `display: ` property, when you want hide/show parts of the UI depending of viewport size.
 
@@ -36,7 +56,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 | ---------- | ----- | --------------- |
 | Responsive | Yes   | `lg_hidden-yes` |
 
-## Gutter:
+## Gutter
 
 > We use gutter `--gutter` as default space in all primitives where they apply.
 
@@ -47,7 +67,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 | Responsive | No    | N/A     |
 | Fluid      | No    | N/A     |
 
-## Gap (top):
+## Gap (top)
 
 > Gap top is complimentary utility to adjust space where needed. Say you use Stack primitive and want more space
 > above stack and you feel nested stack is not needed. Gap top is what you use. This type of adjustment is
@@ -60,7 +80,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 | Responsive | No    | N/A               |
 | Fluid      | Yes   | uses fluid spaces |
 
-### Example:
+#### Example
 
 ```jsx
 <main>
@@ -74,7 +94,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 </main>
 ```
 
-## Gap (bottom):
+### Gap (bottom)
 
 > Similar to gap top, but less often used.
 
@@ -85,7 +105,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 | Responsive | No    | N/A               |
 | Fluid      | Yes   | uses fluid spaces |
 
-## Gap (inline):
+### Gap (inline)
 
 > Gap inline is very handy if you want to setup symmetric left and right padding together.
 > `auto` variant is `margin-inline: auto`, typically would be used for centering if you don't want to use `Center` primitive
@@ -98,26 +118,21 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 | Responsive | No    | N/A               |
 | Fluid      | Yes   | uses fluid spaces |
 
-## Padding:
+## Padding
 
 - .pad-{1-5}
 
-## Padding (block):
+### Padding (block):
 
 - .pad-block-{1-5}
 
-## Padding (inline):
+### Padding (inline):
 
 - .pad-inline-{1-5}
 
-## Font:
+## Typography
 
-> Adjusting `font-family` based primary/secondary.
-
-- .font-primary
-- .font-secondary
-
-## Text:
+### Text Sizes
 
 > Adjusting size of text, using `font-size`
 
@@ -129,7 +144,30 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 | Responsive | No    | N/A               |
 | Fluid      | Yes   | uses fluid spaces |
 
-## Leading:
+> Text related utilityes
+
+### Text Align
+
+> Aligning text `text-align`, prefixed with `ta-`
+
+- .ta-center
+- .ta-left
+- .ta-right
+
+### Text Transform
+
+> Transforming text `text-transform`, prefixed with `tt-`
+
+- .tt-upper
+
+### Typeface (Font Family)
+
+> Adjusting `font-family` based primary/secondary.
+
+- .font-primary
+- .font-secondary
+
+### Leading
 
 > Leading is about changing `line-height`
 
@@ -137,7 +175,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 - .leading-short
 - .leading-regular
 
-## Measure:
+### Measure
 
 > Measure represents width of element, typically element where you have text. It's based on `ch` unit
 > You can use it for other elements to specify measure as well, but keep in mind longest measure is `65ch`.
@@ -147,21 +185,7 @@ Proper utility classes just as in programing do one thing and do it well. `.visu
 - .measure-short
 - .measure-long
 
-## Text Alignment:
-
-> Aligning text `text-align`, prefixed with `ta-`
-
-- .ta-center
-- .ta-left
-- .ta-right
-
-## Text Transform:
-
-> Transforming text `text-transform`, prefixed with `tt-`
-
-- .tt-upper
-
-## Width:
+## Width
 
 > This is percentage based widths(100%, 50%, 25%, 33%) more for layout declarations.
 
