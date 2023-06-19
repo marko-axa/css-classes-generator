@@ -1,6 +1,7 @@
 ## Utility CSS Class Generator
 
-> this is project is based on gorko utility generator
+> This project is based on the Gorko utility generator. However, our use cases were constrained because we run as a pod. Therefore, changes needed to be made to comply with our upstream.
+> Additional configuration and script where also added.
 
 ### Motivation
 
